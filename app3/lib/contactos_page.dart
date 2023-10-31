@@ -34,7 +34,7 @@ class contactos extends StatelessWidget {
 
               const SizedBox(height: 15,),
               Container(
-                height: 70,
+                height: 78,
                 decoration: const BoxDecoration(
                   border: Border(
                     top: BorderSide(color: Colors.black12),
@@ -42,36 +42,36 @@ class contactos extends StatelessWidget {
                     bottom: BorderSide(color: Colors.black12),
                   ),
                 ),
-                child: const Padding(
-                  padding: EdgeInsets.only(top: 12),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 0),
                   child:  SizedBox(
                     width: double.infinity,
                     child: Row(
                       children: [
-                        Spacer(),
+                        const Spacer(),
                         Column(
                           children: [
-                            Icon(Icons.phone),
-                            Text('Llamar'),
+                            IconButton(onPressed: (){}, icon: const Icon(Icons.phone)),
+                            const Text('Llamar'),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                   
                         Column(
                           children: [
-                            Icon(Icons.message),
-                            Text('Mensaje de texto'),
+                            IconButton(onPressed: (){}, icon: const Icon(Icons.message)),
+                            const Text('Mensaje de texto'),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                   
                         Column(
                           children: [
-                            Icon(Icons.videocam),
-                            Text('Video'),
+                            IconButton(onPressed: (){}, icon: const Icon(Icons.videocam),),
+                            const Text('Video'),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                       ],
                     ),
                   ),
