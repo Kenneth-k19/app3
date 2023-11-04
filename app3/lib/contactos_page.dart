@@ -11,7 +11,7 @@ class contactos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Contactos'),
+          title: const Text(''),
         ),
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
@@ -21,19 +21,21 @@ class contactos extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const CircleAvatar(
+                  backgroundColor: Color(0xffdc3c6c),
                   radius: 50,
                   child: Text('P',
                     style: TextStyle(
-                        fontWeight: FontWeight.bold, 
-                        fontSize: 50
+                        fontWeight: FontWeight.w400, 
+                        fontSize: 50,
+                        color: Colors.white,
                     ),
                   ),
                 ),
           
-                const SizedBox(height: 20,),
+                const SizedBox(height: 50,),
                 const Text(
                   'Pascualillo',
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25,),
                   ),
         
                 const SizedBox(height: 15,),
