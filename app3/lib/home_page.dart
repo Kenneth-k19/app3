@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const home());
+void main() => runApp(const Home());
 
-class home extends StatelessWidget {
-  const home({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class home extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: (){
-                  Navigator.pushNamed(context, '/contactos');
+                  Navigator.pushNamed(context, '/listaContactos');
                 }, 
                 child: const Text('Contactos'),
                 ),
