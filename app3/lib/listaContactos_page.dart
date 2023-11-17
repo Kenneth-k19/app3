@@ -24,24 +24,29 @@ class ListaContactos extends StatelessWidget {
     {'nombre':'Abner',
       'telefono':'9543-0989',
       'correo':'abner@gmail.com',},
+    {'nombre':'Roberto Martinez',
+    'telefono':'9543-0989',
+    'correo':'abner@gmail.com',},
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
-      ),
-
       body: ListView.builder(
         itemCount: contactos.length,
         itemBuilder: (BuildContext context, int index)
         {
-          return ListTile(
-            title: Text(contactos[index].values.first),
-            leading: const CircleAvatar(child: Text('')),
+          return index!=0 ? ListTile(
+            title: Text(contactos[index]['nombre']),
+            leading: CircleAvatar(child: Text(contactos[index]['nombre'][0])),
             onTap: (){},
-          );
+          ) : const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.plus_one_sharp),
+                Text('Anadir a contactos')
+              ],
+            );
         },
         ),
     );
