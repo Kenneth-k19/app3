@@ -1,4 +1,5 @@
 //import 'package:app3/contactos_page.dart';
+import 'package:app3/extract_arguments.dart';
 import 'package:app3/home_page.dart';
 import 'package:app3/listaContactos_page.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context)=> const Home(),
         '/listaContactos':(context)=>  ListaContactos(),
+        '/extractArguments': (context) => const  ExtractUserArguments(),
 
       },
     );
